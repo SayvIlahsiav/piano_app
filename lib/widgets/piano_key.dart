@@ -17,7 +17,7 @@ class PianoKey extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final keyWidth = screenWidth / (isSharp ? 28 : 14);
+    final keyWidth = screenWidth / (isSharp ? 16 : 8);
     final keyHeight = MediaQuery.of(context).size.height * (isSharp ? 0.8 : 1);
 
     return GestureDetector(
@@ -25,7 +25,6 @@ class PianoKey extends StatelessWidget {
       child: Container(
         width: keyWidth,
         height: keyHeight,
-        margin: EdgeInsets.symmetric(horizontal: 1),
         decoration: BoxDecoration(
           color: isSharp ? Colors.black : Colors.white,
           border: Border.all(color: Colors.black),
