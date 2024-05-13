@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   audioplayers: ^6.0.0
+  flutter_screenutil: ^5.9.0
 
 dev_dependencies:
   flutter_test:
@@ -59,19 +60,19 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/sounds/c4.ogg
-    - assets/sounds/cs4.ogg
-    - assets/sounds/d4.ogg
-    - assets/sounds/ds4.ogg
-    - assets/sounds/e4.ogg
-    - assets/sounds/f4.ogg
-    - assets/sounds/fs4.ogg
-    - assets/sounds/g4.ogg
-    - assets/sounds/gs4.ogg
-    - assets/sounds/a4.ogg
-    - assets/sounds/as4.ogg
-    - assets/sounds/b4.ogg
-    - assets/sounds/c5.ogg
+    - assets/sounds/C4.ogg
+    - assets/sounds/Db.ogg
+    - assets/sounds/D.ogg
+    - assets/sounds/Eb.ogg
+    - assets/sounds/E.ogg
+    - assets/sounds/F.ogg
+    - assets/sounds/Gb.ogg
+    - assets/sounds/G.ogg
+    - assets/sounds/Ab.ogg
+    - assets/sounds/A.ogg
+    - assets/sounds/Bb.ogg
+    - assets/sounds/B.ogg
+    - assets/sounds/C5.ogg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -1,34 +1,49 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:piano_app/widgets/piano_key.dart';
 
-class HomeScreen extends StatefulWidget {
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Simple Piano')),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          PianoKey(note: 'c4', color: Colors.white),
-          PianoKey(note: 'cs4', color: Colors.black),
-          PianoKey(note: 'd4', color: Colors.white),
-          PianoKey(note: 'ds4', color: Colors.black),
-          PianoKey(note: 'e4', color: Colors.white),
-          PianoKey(note: 'f4', color: Colors.white),
-          PianoKey(note: 'fs4', color: Colors.black),
-          PianoKey(note: 'g4', color: Colors.white),
-          PianoKey(note: 'gs4', color: Colors.black),
-          PianoKey(note: 'a4', color: Colors.white),
-          PianoKey(note: 'as4', color: Colors.black),
-          PianoKey(note: 'b4', color: Colors.white),
-          PianoKey(note: 'c5', color: Colors.white),
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: <Widget>[
+            // Create a row of white keys
+            Row(
+              children: [
+                PianoKey(note: 'C4'),
+                PianoKey(note: 'D'),
+                PianoKey(note: 'E'),
+                PianoKey(note: 'F'),
+                PianoKey(note: 'G'),
+                PianoKey(note: 'A'),
+                PianoKey(note: 'B'),
+                PianoKey(note: 'C5'), // Next octave C
+              ],
+            ),
+            // Overlay the black keys in appropriate positions
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: Row(
+                children: [
+                  Spacer(flex: 1),
+                  PianoKey(note: 'Db', isSharp: true),
+                  Spacer(flex: 2),
+                  PianoKey(note: 'Eb', isSharp: true),
+                  Spacer(flex: 3),
+                  PianoKey(note: 'Gb', isSharp: true),
+                  Spacer(flex: 2),
+                  PianoKey(note: 'Ab', isSharp: true),
+                  Spacer(flex: 2),
+                  PianoKey(note: 'Bb', isSharp: true),
+                  Spacer(flex: 3),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
