@@ -4,20 +4,19 @@ import 'package:audioplayers/audioplayers.dart';
 class PianoKey extends StatelessWidget {
   final String note;
   final Color color;
-  final AudioCache player;
+  static final AudioPlayer player = AudioPlayer(); // Shared player instance
 
   // Constructor with required parameters
   PianoKey({
     Key? key,
     required this.note,
     required this.color,
-    required this.player,
   }) : super(key: key);
 
   // Method to play sound
   Future<void> playSound() async {
-    final player = AudioPlayer();
-    await player.play(AssetSource('sounds/$note.ogg'));
+    await player.setSource(AssetSource('sounds/$note.ogg'));
+    player.resume(); // This starts playing the audio
   }
 
   @override

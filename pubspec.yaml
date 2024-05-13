@@ -60,6 +60,18 @@ flutter:
   uses-material-design: true
   assets:
     - assets/sounds/c4.ogg
+    - assets/sounds/cs4.ogg
+    - assets/sounds/d4.ogg
+    - assets/sounds/ds4.ogg
+    - assets/sounds/e4.ogg
+    - assets/sounds/f4.ogg
+    - assets/sounds/fs4.ogg
+    - assets/sounds/g4.ogg
+    - assets/sounds/gs4.ogg
+    - assets/sounds/a4.ogg
+    - assets/sounds/as4.ogg
+    - assets/sounds/b4.ogg
+    - assets/sounds/c5.ogg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
