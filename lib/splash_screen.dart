@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen>
     );
 
     _controller!.forward().then((_) {
-      Timer(Duration(seconds: 3), () {
+      Timer(const Duration(seconds: 3), () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => HomeScreen()),
         );
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen>
       body: Center(
         child: FadeTransition(
           opacity: _animation!,
-          child: Text(
+          child: const Text(
             'Simple Piano',
             style: TextStyle(
               fontSize: 24,
