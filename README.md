@@ -18,6 +18,8 @@ A simple piano application built using Flutter, allowing users to play piano not
   <img src="assets/screen_record/doremifasolati.mp4.gif" alt="Piano App Demo" width="80%" />
 </p>
 
+> [piano_app_v0.1.0-pre.apk](https://github.com/SayvIlahsiav/piano_app/releases/download/v0.1.0-pre/piano_app_v0.1.0-pre.apk)
+
 ## Getting Started
 
 ### Prerequisites
