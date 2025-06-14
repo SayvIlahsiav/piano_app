@@ -12,6 +12,12 @@ A simple piano application built using Flutter, allowing users to play piano not
 - **Splash Screen:** Displays a fade-in "Simple Piano" text before navigating to the home screen.
 - **Home Screen:** Contains the piano keys arranged as a traditional keyboard.
 
+> Here's a quick look at the Simple Piano app in action:
+
+<p align="center">
+  <img src="assets/screen_record/doremifasolati.mp4.gif" alt="Piano App Demo" width="80%" />
+</p>
+
 ## Getting Started
 
 ### Prerequisites
